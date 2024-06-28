@@ -2,7 +2,7 @@
 ### Basic Python Questions
 
 1. **What is Python, and what are its key features?**
-— **Answer:** Python is a high-level, interpreted programming language known for its readability and ease of use. Key features include dynamic typing, automatic memory management, a large standard library, and support for multiple programming paradigms (procedural, object-oriented, and functional).
+  — **Answer:** Python is a high-level, interpreted programming language known for its readability and ease of use. Key features include dynamic typing, automatic memory management, a large standard library, and support for multiple programming paradigms (procedural, object-oriented, and functional).
 
 2. **What are Python’s built-in data types?**
 — **Answer:** Python’s built-in data types include:
