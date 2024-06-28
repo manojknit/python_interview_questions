@@ -2,95 +2,96 @@
 ### Basic Python Questions
 
 1. **What is Python, and what are its key features?**
-  — **Answer:** Python is a high-level, interpreted programming language known for its readability and ease of use. Key features include dynamic typing, automatic memory management, a large standard library, and support for multiple programming paradigms (procedural, object-oriented, and functional).
+
+  * **Answer:** Python is a high-level, interpreted programming language known for its readability and ease of use. Key features include dynamic typing, automatic memory management, a large standard library, and support for multiple programming paradigms (procedural, object-oriented, and functional).
 
 2. **What are Python’s built-in data types?**
-— **Answer:** Python’s built-in data types include:
-— Numeric types: `int`, `float`, `complex`
-— Sequence types: `list`, `tuple`, `range`
-— Text type: `str`
-— Mapping type: `dict`
-— Set types: `set`, `frozenset`
-— Boolean type: `bool`
-— Binary types: `bytes`, `bytearray`, `memoryview`
+  * **Answer:** Python’s built-in data types include:
+    * Numeric types: `int`, `float`, `complex`
+    * Sequence types: `list`, `tuple`, `range`
+    * Text type: `str`
+    * Mapping type: `dict`
+    * Set types: `set`, `frozenset`
+    * Boolean type: `bool`
+    * Binary types: `bytes`, `bytearray`, `memoryview`
 
 3. **Explain the difference between lists and tuples in Python.**
-— **Answer:** Lists are mutable, meaning their elements can be changed after creation. Tuples are immutable, meaning they cannot be changed after creation. Lists use square brackets `[]`, while tuples use parentheses `()`.
+* **Answer:** Lists are mutable, meaning their elements can be changed after creation. Tuples are immutable, meaning they cannot be changed after creation. Lists use square brackets `[]`, while tuples use parentheses `()`.
 
 4. **How do you manage memory in Python?**
-— **Answer:** Python manages memory using automatic garbage collection, which reclaims memory by deallocating objects that are no longer in use. Python uses reference counting and a cyclic garbage collector to manage memory.
+* **Answer:** Python manages memory using automatic garbage collection, which reclaims memory by deallocating objects that are no longer in use. Python uses reference counting and a cyclic garbage collector to manage memory.
 
 5. **What is the purpose of the `self` keyword in Python classes?**
-— **Answer:** The `self` keyword represents the instance of the class. It allows access to the attributes and methods of the class in Python’s object-oriented programming.
+* **Answer:** The `self` keyword represents the instance of the class. It allows access to the attributes and methods of the class in Python’s object-oriented programming.
 
 6. **Explain the difference between `deepcopy` and `shallowcopy`.**
-— **Answer:** `shallowcopy` creates a new object but inserts references into it to the objects found in the original. `deepcopy` creates a new object and recursively copies all objects found in the original.
+* **Answer:** `shallowcopy` creates a new object but inserts references into it to the objects found in the original. `deepcopy` creates a new object and recursively copies all objects found in the original.
 
 7. **What are Python decorators, and how do you use them?**
-— **Answer:** Decorators are functions that modify the behavior of another function or method. They are used with the `@decorator_name` syntax above a function definition. They can be used to add functionality like logging, access control, or instrumentation.
+* **Answer:** Decorators are functions that modify the behavior of another function or method. They are used with the `@decorator_name` syntax above a function definition. They can be used to add functionality like logging, access control, or instrumentation.
 
 ### Intermediate Python Questions
 
 1. **What are list comprehensions, and how do you use them?**
-— **Answer:** List comprehensions provide a concise way to create lists. They consist of brackets containing an expression followed by a `for` clause, and optionally, `if` clauses. Example: `[x**2 for x in range(10) if x % 2 == 0]`.
+* **Answer:** List comprehensions provide a concise way to create lists. They consist of brackets containing an expression followed by a `for` clause, and optionally, `if` clauses. Example: `[x**2 for x in range(10) if x % 2 == 0]`.
 
 2. **Explain the concept of generators and iterators in Python.**
-— **Answer:** Generators are a type of iterator that allow you to iterate through a sequence of values lazily, generating each value only when requested. They are defined using functions with the `yield` statement. Iterators are objects that implement the iterator protocol, consisting of the `__iter__()` and `__next__()` methods.
+* **Answer:** Generators are a type of iterator that allow you to iterate through a sequence of values lazily, generating each value only when requested. They are defined using functions with the `yield` statement. Iterators are objects that implement the iterator protocol, consisting of the `__iter__()` and `__next__()` methods.
 
 3. **What is the difference between `__init__` and `__new__`?**
-— **Answer:** `__init__` initializes a new object and is called after the object is created. `__new__` is responsible for creating a new instance of a class and is called before `__init__`.
+* **Answer:** `__init__` initializes a new object and is called after the object is created. `__new__` is responsible for creating a new instance of a class and is called before `__init__`.
 
 4. **How do you handle exceptions in Python?**
-— **Answer:** Exceptions are handled using `try`, `except`, `else`, and `finally` blocks. The `try` block contains code that might raise an exception, `except` blocks handle specific exceptions, `else` runs if no exception occurs, and `finally` runs regardless of whether an exception occurred.
+* **Answer:** Exceptions are handled using `try`, `except`, `else`, and `finally` blocks. The `try` block contains code that might raise an exception, `except` blocks handle specific exceptions, `else` runs if no exception occurs, and `finally` runs regardless of whether an exception occurred.
 
 5. **What is the Global Interpreter Lock (GIL) in Python?**
-— **Answer:** The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at once. This simplifies memory management but can be a bottleneck in CPU-bound multi-threaded programs.
+* **Answer:** The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at once. This simplifies memory management but can be a bottleneck in CPU-bound multi-threaded programs.
 
 6. **How do you manage packages and dependencies in Python?**
-— **Answer:** Packages and dependencies are managed using tools like `pip` and virtual environments (`venv`). `requirements.txt` files are commonly used to list dependencies.
+* **Answer:** Packages and dependencies are managed using tools like `pip` and virtual environments (`venv`). `requirements.txt` files are commonly used to list dependencies.
 
 7. **What are lambda functions, and how do you use them?**
-— **Answer:** Lambda functions are anonymous, single-expression functions defined using the `lambda` keyword. They are often used for short, throwaway functions. Example: `lambda x: x**2`.
+* **Answer:** Lambda functions are anonymous, single-expression functions defined using the `lambda` keyword. They are often used for short, throwaway functions. Example: `lambda x: x**2`.
 
 ### Advanced Python Questions
 
 1. **Explain the difference between multithreading and multiprocessing in Python.**
-— **Answer:** Multithreading involves multiple threads within a single process sharing the same memory space, whereas multiprocessing involves multiple processes, each with its own memory space. Due to the GIL, CPU-bound tasks often benefit more from multiprocessing.
+* **Answer:** Multithreading involves multiple threads within a single process sharing the same memory space, whereas multiprocessing involves multiple processes, each with its own memory space. Due to the GIL, CPU-bound tasks often benefit more from multiprocessing.
 
 2. **How does Python’s garbage collection work?**
-— **Answer:** Python uses reference counting and a cyclic garbage collector to manage memory. Reference counting tracks the number of references to each object, and the cyclic garbage collector handles objects involved in reference cycles.
+* **Answer:** Python uses reference counting and a cyclic garbage collector to manage memory. Reference counting tracks the number of references to each object, and the cyclic garbage collector handles objects involved in reference cycles.
 
 3. **What are metaclasses in Python, and how are they used?**
-— **Answer:** Metaclasses are classes of classes that define how classes behave. A class is an instance of a metaclass. Metaclasses allow you to customize class creation and behavior, for example, by modifying class attributes or methods.
+* **Answer:** Metaclasses are classes of classes that define how classes behave. A class is an instance of a metaclass. Metaclasses allow you to customize class creation and behavior, for example, by modifying class attributes or methods.
 
 4. **How do you optimize the performance of a Python program?**
-— **Answer:** Performance optimization can involve using efficient algorithms and data structures, minimizing the use of global variables, using built-in functions and libraries, profiling the code to identify bottlenecks, and using tools like `NumPy` for numerical operations or C extensions.
+* **Answer:** Performance optimization can involve using efficient algorithms and data structures, minimizing the use of global variables, using built-in functions and libraries, profiling the code to identify bottlenecks, and using tools like `NumPy` for numerical operations or C extensions.
 
 5. **What are coroutines in Python, and how are they different from regular functions?**
-— **Answer:** Coroutines are functions that can be paused and resumed during execution using `await` and `async` syntax. They are used for asynchronous programming, allowing non-blocking I/O operations, unlike regular functions that run synchronously.
+* **Answer:** Coroutines are functions that can be paused and resumed during execution using `await` and `async` syntax. They are used for asynchronous programming, allowing non-blocking I/O operations, unlike regular functions that run synchronously.
 
 6. **Explain the concept of monkey patching in Python.**
-— **Answer:** Monkey patching refers to the dynamic modification of a module or class at runtime. It can be used to change or extend the behavior of libraries or classes without modifying their source code.
+* **Answer:** Monkey patching refers to the dynamic modification of a module or class at runtime. It can be used to change or extend the behavior of libraries or classes without modifying their source code.
 
 7. **What is the difference between `staticmethod` and `classmethod`?**
-— **Answer:** `staticmethod` does not take any implicit first argument and is called on a class or an instance. `classmethod` takes `cls` as the first argument, which refers to the class, and can be called on a class or an instance.
+* **Answer:** `staticmethod` does not take any implicit first argument and is called on a class or an instance. `classmethod` takes `cls` as the first argument, which refers to the class, and can be called on a class or an instance.
 
 ### Python in Data Science and Machine Learning
 
 1. **What libraries do you commonly use for data manipulation and analysis in Python?**
-— **Answer:** Common libraries include `Pandas` for data manipulation, `NumPy` for numerical operations, `Matplotlib` and `Seaborn` for data visualization, `Scikit-learn` for machine learning, and `SciPy` for scientific computing.
+* **Answer:** Common libraries include `Pandas` for data manipulation, `NumPy` for numerical operations, `Matplotlib` and `Seaborn` for data visualization, `Scikit-learn` for machine learning, and `SciPy` for scientific computing.
 
 2. **How do you handle missing data in Python?**
-— **Answer:** Missing data can be handled using `Pandas` methods such as `isnull()`, `dropna()`, and `fillna()`. You can either remove missing values or fill them with appropriate values, such as the mean, median, or a placeholder.
+* **Answer:** Missing data can be handled using `Pandas` methods such as `isnull()`, `dropna()`, and `fillna()`. You can either remove missing values or fill them with appropriate values, such as the mean, median, or a placeholder.
 
 3. **Explain the use of Pandas DataFrames and their advantages.**
-— **Answer:** Pandas DataFrames are 2-dimensional labeled data structures with columns of potentially different types. They provide powerful data manipulation and analysis capabilities, such as indexing, slicing, grouping, merging, and aggregation.
+* **Answer:** Pandas DataFrames are 2-dimensional labeled data structures with columns of potentially different types. They provide powerful data manipulation and analysis capabilities, such as indexing, slicing, grouping, merging, and aggregation.
 
 4. **What is scikit-learn, and how is it used in machine learning?**
-— **Answer:** Scikit-learn is a machine learning library that provides simple and efficient tools for data mining and data analysis. It includes algorithms for classification, regression, clustering, dimensionality reduction, and model selection.
+* **Answer:** Scikit-learn is a machine learning library that provides simple and efficient tools for data mining and data analysis. It includes algorithms for classification, regression, clustering, dimensionality reduction, and model selection.
 
 5. **How do you implement a basic machine learning model in Python?**
-— **Answer:** To implement a basic machine learning model:
+* **Answer:** To implement a basic machine learning model:
 1. Import the necessary libraries.
 2. Load and preprocess the data.
 3. Split the data into training and testing sets.
@@ -113,10 +114,10 @@ print(accuracy_score(y_test, y_pred))
 ```
 
 6. **What is TensorFlow/PyTorch, and how do you use them in deep learning projects?**
-— **Answer:** TensorFlow and PyTorch are open-source deep learning frameworks. TensorFlow is known for its flexible architecture and deployment options, while PyTorch is known for its dynamic computational graph and ease of use. They are used to build and train neural networks for tasks such as image recognition, natural language processing, and reinforcement learning.
+* **Answer:** TensorFlow and PyTorch are open-source deep learning frameworks. TensorFlow is known for its flexible architecture and deployment options, while PyTorch is known for its dynamic computational graph and ease of use. They are used to build and train neural networks for tasks such as image recognition, natural language processing, and reinforcement learning.
 
 7. **Explain the concept of data pipelines and their importance in machine learning workflows.**
-— **Answer:** Data
+* **Answer:** Data
 
 # Detail Key Concepts
 
@@ -183,20 +184,20 @@ In this example, `my_generator` is a generator function that yields the values 1
 ### Key Differences
 
 1. **Purpose:**
-— **Decorators:** Used to modify or extend the behavior of functions or methods.
-— **Generators:** Used to produce a sequence of values over time without storing them all in memory.
+* **Decorators:** Used to modify or extend the behavior of functions or methods.
+* **Generators:** Used to produce a sequence of values over time without storing them all in memory.
 
 2. **Syntax:**
-— **Decorators:** Use the `@decorator_name` syntax above a function definition.
-— **Generators:** Use the `yield` keyword within a function.
+* **Decorators:** Use the `@decorator_name` syntax above a function definition.
+* **Generators:** Use the `yield` keyword within a function.
 
 3. **Memory Usage:**
-— **Decorators:** Do not affect memory usage directly; they add additional behavior to functions.
-— **Generators:** Are memory efficient as they generate values on the fly instead of storing them all in memory.
+* **Decorators:** Do not affect memory usage directly; they add additional behavior to functions.
+* **Generators:** Are memory efficient as they generate values on the fly instead of storing them all in memory.
 
 4. **Use Cases:**
-— **Decorators:** Commonly used for logging, access control, memoization, and instrumentation.
-— **Generators:** Used for iterating over large datasets, producing infinite sequences, and managing streams of data.
+* **Decorators:** Commonly used for logging, access control, memoization, and instrumentation.
+* **Generators:** Used for iterating over large datasets, producing infinite sequences, and managing streams of data.
 
 ### Example Combining Both
 
@@ -570,17 +571,17 @@ In this example:
 ### How Metaclasses Work
 
 1. **Class Creation Process:**
-— When a class is created, Python first checks if a metaclass is specified.
-— If no metaclass is specified, Python uses the default `type` metaclass.
-— The `__new__` method of the metaclass is called to create the class.
-— The `__init__` method of the metaclass initializes the class.
+* When a class is created, Python first checks if a metaclass is specified.
+* If no metaclass is specified, Python uses the default `type` metaclass.
+* The `__new__` method of the metaclass is called to create the class.
+* The `__init__` method of the metaclass initializes the class.
 
 2. **`__new__` and `__init__`:**
-— `__new__` is responsible for creating and returning a new class object.
-— `__init__` initializes the class object after it has been created.
+* `__new__` is responsible for creating and returning a new class object.
+* `__init__` initializes the class object after it has been created.
 
 3. **Inheritance:**
-— If a class inherits from another class that specifies a metaclass, the metaclass is inherited unless explicitly overridden.
+* If a class inherits from another class that specifies a metaclass, the metaclass is inherited unless explicitly overridden.
 
 ### Advanced Example: Singleton Pattern
 
@@ -699,16 +700,16 @@ In this example:
 ### Key Differences
 
 1. **First Argument:**
-— **`staticmethod`:** Does not receive any implicit first argument.
-— **`classmethod`:** Receives the class (`cls`) as its first implicit argument.
+* **`staticmethod`:** Does not receive any implicit first argument.
+* **`classmethod`:** Receives the class (`cls`) as its first implicit argument.
 
 2. **Usage Context:**
-— **`staticmethod`:** Used for utility functions that don’t need access to the class or instance.
-— **`classmethod`:** Used when you need to access or modify class state or use the class in some way.
+* **`staticmethod`:** Used for utility functions that don’t need access to the class or instance.
+* **`classmethod`:** Used when you need to access or modify class state or use the class in some way.
 
 3. **Calling:**
-— **`staticmethod`:** Can be called on the class or an instance without any difference in behavior.
-— **`classmethod`:** Typically called on the class, but can also be called on an instance. The first parameter will always be the class.
+* **`staticmethod`:** Can be called on the class or an instance without any difference in behavior.
+* **`classmethod`:** Typically called on the class, but can also be called on an instance. The first parameter will always be the class.
 
 ### Summary
 
